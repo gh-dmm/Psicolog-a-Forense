@@ -1,0 +1,56 @@
+/* Configuración General */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a; /* Negro profundo */
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Efectos de texto */
+.text-danger {
+    color: #b30000 !important; /* Rojo sangre */
+}
+
+/* Hero Section con imagen de fondo oscura */
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), 
+                url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070&auto=format&fit=crop') center/cover;
+    border-bottom: 2px solid #b30000;
+}
+
+/* Tarjetas de servicio */
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(179, 0, 0, 0.2);
+    border-color: #b30000 !important;
+}
+
+/* Animaciones suaves */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Inputs de formulario */
+.form-control:focus {
+    background-color: #1a1a1a;
+    border-color: #b30000;
+    box-shadow: 0 0 5px rgba(179, 0, 0, 0.5);
+    color: white;
+}
+
